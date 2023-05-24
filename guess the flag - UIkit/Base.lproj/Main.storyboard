@@ -24,7 +24,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8je-Ky-e1X">
                                 <rect key="frame" x="84.666666666666686" y="100" width="224" height="114"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="italy"/>
+                                <buttonConfiguration key="configuration" style="plain" image="italy" imagePadding="0.0"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPw-es-mMX">
                                 <rect key="frame" x="84.666666666666686" y="388" width="224" height="114"/>
