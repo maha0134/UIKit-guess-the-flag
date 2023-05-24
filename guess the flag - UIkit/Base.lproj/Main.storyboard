@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UAp-Lv-0mB">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -16,16 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uP0-OO-0uX">
-                                <rect key="frame" x="84.666666666666686" y="244" width="224" height="114"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uP0-OO-0uX">
+                                <rect key="frame" x="84.666666666666657" y="285" width="224" height="114"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="italy"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2si-J5-6v1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8je-Ky-e1X">
-                                <rect key="frame" x="84.666666666666686" y="100" width="224" height="114"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8je-Ky-e1X">
+                                <rect key="frame" x="84.666666666666657" y="150" width="224" height="114"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="italy" imagePadding="0.0"/>
                                 <connections>
@@ -33,23 +34,31 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPw-es-mMX">
-                                <rect key="frame" x="84.666666666666686" y="388" width="224" height="114"/>
+                                <rect key="frame" x="84.666666666666686" y="409" width="224" height="114"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="italy"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iKJ-dz-PLe"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUz-wb-HeQ">
+                                <rect key="frame" x="175.66666666666666" y="100" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="8je-Ky-e1X" secondAttribute="top" constant="3" id="BHq-tN-F5a"/>
+                            <constraint firstItem="bUz-wb-HeQ" firstAttribute="bottom" secondItem="8je-Ky-e1X" secondAttribute="top" id="BHq-tN-F5a"/>
+                            <constraint firstItem="bUz-wb-HeQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CJE-U4-WaG"/>
                             <constraint firstItem="uP0-OO-0uX" firstAttribute="top" secondItem="8je-Ky-e1X" secondAttribute="bottom" constant="30" id="e6Z-Qc-px6"/>
                             <constraint firstItem="8je-Ky-e1X" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ies-ZQ-KJK"/>
                             <constraint firstItem="uP0-OO-0uX" firstAttribute="centerX" secondItem="8je-Ky-e1X" secondAttribute="centerX" id="kEe-F5-N3q"/>
                             <constraint firstItem="sPw-es-mMX" firstAttribute="centerX" secondItem="uP0-OO-0uX" secondAttribute="centerX" id="mn2-fi-PYI"/>
                             <constraint firstItem="sPw-es-mMX" firstAttribute="top" secondItem="uP0-OO-0uX" secondAttribute="bottom" constant="30" id="nBa-AG-aNT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="bUz-wb-HeQ" secondAttribute="top" constant="3" id="nQp-AR-VMX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="b4U-38-fCR"/>
@@ -57,6 +66,7 @@
                         <outlet property="button1" destination="8je-Ky-e1X" id="3Kb-zT-jwK"/>
                         <outlet property="button2" destination="uP0-OO-0uX" id="VC0-od-Mla"/>
                         <outlet property="button3" destination="sPw-es-mMX" id="WmS-PX-gtM"/>
+                        <outlet property="label" destination="bUz-wb-HeQ" id="d8g-mZ-sis"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
